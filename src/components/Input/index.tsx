@@ -14,7 +14,7 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
 }
 
-const Input = ({ name, ...rest }: IInputProps) => {
+export const Input = ({ name, ...rest }: IInputProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [isFocused, setIsFocused] = useState(false);
@@ -52,5 +52,3 @@ const Input = ({ name, ...rest }: IInputProps) => {
     </Container>
   );
 };
-
-export default Input;

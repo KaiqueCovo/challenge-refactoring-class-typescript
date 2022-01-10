@@ -91,5 +91,3 @@ export function Food({ available, food, handleEditFood, handleDelete }: IFoodPro
     </Container>
   );
 };
-
-export default Food;
